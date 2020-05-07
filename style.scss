@@ -1,0 +1,39 @@
+$red: #DE2910;
+$yellow: #FFDE00;
+
+.navbar {
+    height: 60px;
+    background-color: $yellow;
+    :hover {
+        color: $yellow;
+    }
+}
+.navbar-brand {
+    background-color: $red;
+    color: $yellow;
+    margin-top: -8px;
+    margin-left: 70px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    .subtitle {
+        font-family: Comic Sans MS, Comic Sans, cursive;
+        font-style: italic;
+        margin-bottom: 0px;
+        
+    }
+    .title {
+        font-family: Luminari, fantasy;
+        font-size: 80px;
+        margin-top: 0px;
+        margin-bottom: 3px;
+    }
+}
+
+.intro {
+    
+}
+img {
+    image-orientation: from-image;
+}
