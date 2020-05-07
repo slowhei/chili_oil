@@ -4,6 +4,9 @@
 .link {
     background: #777;
 }
+.col-auto {
+    background: #F00;
+}
 
 .subtitle {
     font-family: Comic Sans MS, Comic Sans, cursive;
