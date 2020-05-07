@@ -1,3 +1,22 @@
+.container-fluid {
+    background: #999;
+}
+.link {
+    background: #777;
+}
+
+.subtitle {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.title {
+    font-family: Luminari, fantasy;
+    font-size: 80px;
+    margin-top: 0px;
+}
+
 img {
     image-orientation: from-image;
 }
