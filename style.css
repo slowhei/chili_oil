@@ -9,11 +9,15 @@
 .navbar-brand {
   background-color: #DE2910;
   color: #FFDE00;
-  margin-top: -8px;
+  margin-top: 90px;
   margin-left: 70px;
+  margin-right: 15px;
   padding-top: 20px;
   padding-left: 25px;
   padding-right: 25px;
+  border-style: solid;
+  border-width: thick;
+  border-color: darkred;
 }
 .navbar-brand .subtitle {
   font-family: Comic Sans MS, Comic Sans, cursive;
@@ -25,6 +29,25 @@
   font-size: 80px;
   margin-top: 0px;
   margin-bottom: 3px;
+}
+
+.navbar-nav :hover {
+  color: #DE2910;
+}
+.navbar-nav .btn:hover {
+  color: #FFDE00;
+}
+
+.nav-item {
+  color: #006eff;
+}
+
+.dropdown-toggle {
+  color: #006eff;
+}
+
+.navbar-text {
+  margin-right: 20px;
 }
 
 img {
