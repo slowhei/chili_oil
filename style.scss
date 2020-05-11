@@ -12,10 +12,11 @@ $blue: rgb(0, 110, 255);
 .navbar-brand {
     background-color: $red;
     color: $yellow;
-    margin-top: 90px;
-    margin-left: 70px;
+    margin-top: 85px;
+    margin-left: 50px;
     margin-right: 15px;
-    padding-top: 20px;
+    padding-top: 18px;
+    padding-bottom: 0px;
     padding-left: 25px;
     padding-right: 25px;
     border-style: solid;
@@ -53,10 +54,17 @@ $blue: rgb(0, 110, 255);
     margin-right: 20px;
 }
 
-
+body {
+    background-color: black;
+}
+.top {
+    margin-top: 90px;
+}
 .intro {
-    
+    text-align: center;
+    color: white;
 }
 img {
+    margin-top: 30px;
     image-orientation: from-image;
 }
