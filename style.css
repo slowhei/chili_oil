@@ -51,22 +51,73 @@
   margin-right: 20px;
 }
 
-body {
-  background-color: black;
+.navbar-btn-buy {
+  width: 75px;
+  font-family: "Arial Black";
 }
 
-.top {
-  margin-top: 90px;
+.intro-btn-buy, .intro-btn-procedure, .intro-btn-ingredients, .intro-text-sub, .intro-text-main {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.intro-btn-buy, .intro-btn-procedure, .intro-btn-ingredients {
+  background-color: #FFDE00;
+  border-color: #FFDE00;
+  color: #DE2910;
 }
 
 .intro {
+  position: relative;
   text-align: center;
   color: white;
 }
 
-img {
-  margin-top: 30px;
-  image-orientation: from-image;
+.intro-image {
+  width: 100%;
+  height: 100%;
+  filter: brightness(65%);
+}
+
+.intro-text-main {
+  top: 30%;
+  width: 90%;
+  font-family: Georgia, serif;
+}
+.intro-text-main .intro-text-professional {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #FFDE00;
+  font-family: Impact, fantasy;
+}
+
+.intro-text-sub {
+  top: 40%;
+  width: 90%;
+  font-style: italic;
+}
+
+.intro-btn-ingredients {
+  top: 65%;
+  left: 28%;
+  width: 15%;
+  height: 8%;
+}
+
+.intro-btn-procedure {
+  top: 65%;
+  left: 60%;
+  width: 15%;
+  height: 8%;
+}
+
+.intro-btn-buy {
+  top: 58%;
+  right: 35%;
+  width: 25%;
+  height: 15%;
 }
 
 /*# sourceMappingURL=style.css.map */
