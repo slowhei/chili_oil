@@ -14,71 +14,87 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <a class="navbar-brand" href="#">
-        <h4 class="subtitle">Tohei's Uncle's</h4>
-        <h1 class="title">Chili Oil!</h1>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse"
-      data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-      aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="ingredients.html">Ingredients</a>
-          <a class="nav-item nav-link" href="procedure.html">Procedure</a>
-          <a class="nav-item nav-link" href="class.html">Class</a>
-          <div class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#"
-            id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">Language</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">English</a>
-              <a class="dropdown-item" href="#">简体中文</a>
-              <a class="dropdown-item" href="#">日本語</a>
-            </div>
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="#">
+      <h4 class="subtitle">Tohei's Uncle's</h4>
+      <h1 class="title">Chili Oil!</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarContent" aria-controls="navbarContent"
+    aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-item nav-link" href="ingredients.html">
+          <span class="nav-item-text">Ingredients</span>
+        </a>
+        <a class="nav-item nav-link" href="procedure.html">
+          <span class="nav-item-text">Procedure</span>
+        </a>
+        <a class="nav-item nav-link" href="class.html">
+          <span class="nav-item-text">Class</span>
+        </a>
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#"
+          id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Language</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">English</a>
+            <a class="dropdown-item" href="#">简体中文</a>
+            <a class="dropdown-item" href="#">日本語</a>
           </div>
         </div>
       </div>
-      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-        <div class="navbar-nav ml-auto">
-          <span class="navbar-text">
-            <a href="class.html" style="color:black">
-              <span style="text-decoration:underline; color:black">Upcoming 
-                Class</span>: March 20th, 2020 | 3:00-4:00pm EST
-            </a>
-          </span>
-          <a href="buy.html" role="button" 
-          class="navbar-btn-buy nav-link btn btn-outline-danger">Buy</a>
-        </div>
-      </div>
-    </nav>
+      <span class="navbar-text">
+        <a href="class.html" class="navbar-text-text">
+          <span class="navbar-text-heading">Upcoming 
+            Class</span>: Mar. 20, 2020 | 3:00-4:00pm EST
+        </a>
+      </span>
+      <a href="buy.html" role="button" 
+      class="navbar-btn-buy nav-link btn btn-outline-danger">Buy</a>
+    </div>
+  </nav>
   </header>
   <body>
     <div class="intro container-fluid p-0">
       <img src="intro-image.jpg" class="intro-image">
       <h1 class="intro-text-main">
-        Enjoy the authentic chili oil recipe of a <span 
+        Enjoy the authentic chili oil of a <span 
         class="intro-text-professional">professional</span> Chinese chef!
       </h1>
       <div class="intro-text-sub">   
         <h2>Unique and aromatic alcohol-using blend;</h2>
         <h2>perfectly complements meats, soups, noodles, and more</h2>
       </div>
-      <button class="intro-btn-ingredients btn btn-primary">
-        <h3>Ingredients</h3>
-      </button>
-      <button class="intro-btn-procedure btn btn-primary">
-        <h3>Procedure</h3>
-      </button>
-      <button class="intro-btn-buy btn btn-primary">
-        <h1>$TBD / TBD</h1>
-        <p>all proceeds go to _________</p>
-      </button>
+      <a href="buy.html" class="intro-btn-buy-a">
+        <button class="intro-btn-buy btn btn-primary">
+          <h1>$50.00 / lb</h1>
+          <h5>Free Delivery</h5>
+        </button>
+      </a>
+      <div class="vertical-line"></div>
+      <h2 class="intro-text-btns">or make it yourself!</h2>
+      <a href="ingredients.html" class="intro-btn-make-a">
+        <button class="intro-btn-ingredients btn btn-primary">
+          <h4>Ingredients</h4>
+        </button>
+      </a>
+      <a href="procedure.html" class="intro-btn-make-a">
+        <button class="intro-btn-procedure btn btn-primary">
+          <h4>Procedure</h4>
+        </button>
+      </a>
+      <h2 class="intro-text-proceeds">
+        All proceeds support
+        <a class="intro-link" href="https://google.com">
+          coolcharity.org
+        </a>.
+      </h2>
     </div>
     
-
+    <!--Maybe include a reviews section or about section here.-->
 
     <!-- javaScript -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -91,10 +107,6 @@
     <script
     src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-    
-
-
-    
+    crossorigin="anonymous"></script> 
   </body>
 </html>

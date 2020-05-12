@@ -1,17 +1,18 @@
 $red: #DE2910;
 $yellow: #FFDE00;
-$blue: rgb(0, 110, 255);
+$blue: #0169D9;
 
+// Navbar
 .navbar {
     height: 60px;
     background-color: $yellow;
+    // Turns text in btn-buy to yellow when hovered
     :hover {
         color: $yellow;
     }
 }
 .navbar-brand {
     background-color: $red;
-    color: $yellow;
     margin-top: 85px;
     margin-left: 50px;
     margin-right: 15px;
@@ -26,48 +27,52 @@ $blue: rgb(0, 110, 255);
     .subtitle {
         font-family: Comic Sans MS, Comic Sans, cursive;
         font-style: italic;
+        font-size: 23.35px;
         margin-bottom: 0px;
+        color: $yellow;
     }
     .title {
         font-family: Luminari, fantasy;
         font-size: 80px;
         margin-top: 0px;
         margin-bottom: 3px;
-    }
-}
-.navbar-nav {
-    :hover {
-        color: $red;
-    }
-
-    .btn:hover {
         color: $yellow;
     }
 }
 .nav-item {
-    color: $blue;
-}
-.dropdown-toggle {
-    color: $blue;
+    .nav-item-text {
+        color: $blue;
+    }
+    :hover {
+        color: $red;
+    }
 }
 .navbar-text {
+    margin-left: 20px;
     margin-right: 20px;
+    @media (max-width: 1118px) {
+        visibility: hidden;
+    }
+    .navbar-text-text {
+        color: black;
+        .navbar-text-heading {
+            text-decoration: underline;
+            color: black;
+        }
+    }
 }
 .navbar-btn-buy {
     width: 75px;
     font-family: "Arial Black";
+    font-size: 20px;
 }
 
+// Intro
 %position-absolute {
     position: absolute;
     margin: 0 auto;
     left: 0;
     right: 0;
-}
-%intro-btn {
-    background-color: $yellow;
-    border-color: $yellow;
-    color: $red;
 }
 .intro {
     position: relative;
@@ -77,11 +82,11 @@ $blue: rgb(0, 110, 255);
 .intro-image {
     width: 100%;
     height: 100%;
-    filter: brightness(65%);
+    filter: brightness(55%);
 }
 .intro-text-main {
     @extend %position-absolute;
-    top: 30%;
+    top: 27%;
     width: 90%;
     font-family: Georgia, serif;
     .intro-text-professional {
@@ -93,31 +98,98 @@ $blue: rgb(0, 110, 255);
 }
 .intro-text-sub {
     @extend %position-absolute;
-    top: 40%;
+    top: 37%;
     width: 90%;
     font-style: italic;
 }
-.intro-btn-ingredients {
-    @extend %position-absolute;
-    @extend %intro-btn;
-    top: 65%;
-    left: 28%;
-    width: 15%;
-    height: 8%;
-}
-.intro-btn-procedure {
-    @extend %position-absolute;
-    @extend %intro-btn;
-    top: 65%;
-    left: 60%;
-    width: 15%;
-    height: 8%;
+.intro-btn-buy-a :hover {
+    background-color: $red;
+    color: $yellow;
+    border-color: $red;
 }
 .intro-btn-buy {
     @extend %position-absolute;
-    @extend %intro-btn;
-    top: 58%;
+    background-color: $yellow;
+    border-color: $yellow;
+    color: $red;
+    top: 56%;
     right: 35%;
     width: 25%;
     height: 15%;
+    :hover {
+        background-color: transparent;
+    }
+}
+.vertical-line {
+    @extend %position-absolute;
+    top: 53%;
+    width: 1px; /* Line width */
+    background-color: white; /* Line color */
+    height: 21%;
+    float: right;
+}
+.intro-text-btns {
+    @extend %position-absolute;
+    top: 55%;
+    left: 42%;
+    font-family:Georgia, serif;
+}
+.intro-btn-make-a :hover {
+    background-color: white;
+    border-color: white;
+    color: $blue;
+}
+.intro-btn-ingredients {
+    @extend %position-absolute;
+    background-color: $blue;
+    border-color: $blue;
+    color: white;
+    top: 62%;
+    left: 26%;
+    width: 15%;
+    height: 8%;
+    :hover {
+        background-color: transparent;
+    }
+}
+.intro-btn-procedure {
+    @extend %position-absolute;
+    background-color: $blue;
+    border-color: $blue;
+    color: white;
+    top: 62%;
+    left: 58%;
+    width: 15%;
+    height: 8%;
+    :hover {
+        background-color: transparent;
+    }
+}
+.intro-text-proceeds {
+    @extend %position-absolute;
+    top: 80%;
+    font-family: Georgia, serif;
+    .intro-link {
+        text-decoration: underline;
+        color: white;
+    }
+}
+
+@media (max-width: 1199px) {
+    h1 {
+        font-size: 33px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h5 {
+        font-size: 15px;
+    }
+}
+@media (max-width: 991px) {
+    // .navbar-brand
+    // intro elements
 }

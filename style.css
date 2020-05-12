@@ -8,7 +8,6 @@
 
 .navbar-brand {
   background-color: #DE2910;
-  color: #FFDE00;
   margin-top: 85px;
   margin-left: 50px;
   margin-right: 15px;
@@ -23,50 +22,53 @@
 .navbar-brand .subtitle {
   font-family: Comic Sans MS, Comic Sans, cursive;
   font-style: italic;
+  font-size: 23.35px;
   margin-bottom: 0px;
+  color: #FFDE00;
 }
 .navbar-brand .title {
   font-family: Luminari, fantasy;
   font-size: 80px;
   margin-top: 0px;
   margin-bottom: 3px;
-}
-
-.navbar-nav :hover {
-  color: #DE2910;
-}
-.navbar-nav .btn:hover {
   color: #FFDE00;
 }
 
-.nav-item {
-  color: #006eff;
+.nav-item .nav-item-text {
+  color: #0169D9;
 }
-
-.dropdown-toggle {
-  color: #006eff;
+.nav-item :hover {
+  color: #DE2910;
 }
 
 .navbar-text {
+  margin-left: 20px;
   margin-right: 20px;
+}
+@media (max-width: 1118px) {
+  .navbar-text {
+    visibility: hidden;
+  }
+}
+.navbar-text .navbar-text-text {
+  color: black;
+}
+.navbar-text .navbar-text-text .navbar-text-heading {
+  text-decoration: underline;
+  color: black;
 }
 
 .navbar-btn-buy {
   width: 75px;
   font-family: "Arial Black";
+  font-size: 20px;
 }
 
-.intro-btn-buy, .intro-btn-procedure, .intro-btn-ingredients, .intro-text-sub, .intro-text-main {
+.intro-text-proceeds, .intro-btn-procedure, .intro-btn-ingredients, .intro-text-btns, .vertical-line, .intro-btn-buy, .intro-text-sub, .intro-text-main {
   position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
-}
-
-.intro-btn-buy, .intro-btn-procedure, .intro-btn-ingredients {
-  background-color: #FFDE00;
-  border-color: #FFDE00;
-  color: #DE2910;
 }
 
 .intro {
@@ -78,11 +80,11 @@
 .intro-image {
   width: 100%;
   height: 100%;
-  filter: brightness(65%);
+  filter: brightness(55%);
 }
 
 .intro-text-main {
-  top: 30%;
+  top: 27%;
   width: 90%;
   font-family: Georgia, serif;
 }
@@ -94,30 +96,103 @@
 }
 
 .intro-text-sub {
-  top: 40%;
+  top: 37%;
   width: 90%;
   font-style: italic;
 }
 
-.intro-btn-ingredients {
-  top: 65%;
-  left: 28%;
-  width: 15%;
-  height: 8%;
-}
-
-.intro-btn-procedure {
-  top: 65%;
-  left: 60%;
-  width: 15%;
-  height: 8%;
+.intro-btn-buy-a :hover {
+  background-color: #DE2910;
+  color: #FFDE00;
+  border-color: #DE2910;
 }
 
 .intro-btn-buy {
-  top: 58%;
+  background-color: #FFDE00;
+  border-color: #FFDE00;
+  color: #DE2910;
+  top: 56%;
   right: 35%;
   width: 25%;
   height: 15%;
+}
+.intro-btn-buy :hover {
+  background-color: transparent;
+}
+
+.vertical-line {
+  top: 53%;
+  width: 1px;
+  /* Line width */
+  background-color: white;
+  /* Line color */
+  height: 21%;
+  float: right;
+}
+
+.intro-text-btns {
+  top: 55%;
+  left: 42%;
+  font-family: Georgia, serif;
+}
+
+.intro-btn-make-a :hover {
+  background-color: white;
+  border-color: white;
+  color: #0169D9;
+}
+
+.intro-btn-ingredients {
+  background-color: #0169D9;
+  border-color: #0169D9;
+  color: white;
+  top: 62%;
+  left: 26%;
+  width: 15%;
+  height: 8%;
+}
+.intro-btn-ingredients :hover {
+  background-color: transparent;
+}
+
+.intro-btn-procedure {
+  background-color: #0169D9;
+  border-color: #0169D9;
+  color: white;
+  top: 62%;
+  left: 58%;
+  width: 15%;
+  height: 8%;
+}
+.intro-btn-procedure :hover {
+  background-color: transparent;
+}
+
+.intro-text-proceeds {
+  top: 80%;
+  font-family: Georgia, serif;
+}
+.intro-text-proceeds .intro-link {
+  text-decoration: underline;
+  color: white;
+}
+
+@media (max-width: 1199px) {
+  h1 {
+    font-size: 33px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
