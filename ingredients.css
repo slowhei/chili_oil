@@ -1,0 +1,55 @@
+table, .notice, .intro, .title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.title {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.intro {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.notice {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+table {
+  margin-bottom: 40px;
+}
+
+th, td {
+  padding: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: center;
+  height: 40px;
+  background-color: #FFDE00;
+}
+
+.grey {
+  background-color: #F2F2F2;
+}
+
+.amount {
+  text-align: center;
+}
+
+.ingredient {
+  width: 20%;
+}
+
+/*# sourceMappingURL=ingredients.css.map */

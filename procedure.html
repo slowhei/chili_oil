@@ -1,34 +1,127 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Procedure - Chili Oil!</title>
-    </head>
-    <body>
-        <ol>
-            <li>Pour oil in a pot and begin heating it. You want it to be hot in about 3 minutes.</li>
-            <li>Place all ingredients into a bowl that can withstand high temperatures. However,
-                save about 3 sesame seeds. (For further flavor adjustment, consult the section below.)</li>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+
+    <title>Procedure - Chili Oil!</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="procedure.css">
+  </head>
+  <header>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+      <a class="navbar-brand" href="index.html">
+        <h4 class="subtitle">Tohei's Uncle's</h4>
+        <h1 class="title">Chili Oil!</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarContent" aria-controls="navbarContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="ingredients.html">
+            <span class="nav-item-text">Ingredients</span>
+          </a>
+          <a class="nav-item nav-link" href="procedure.html">
+            <span class="nav-item-text-active">Procedure</span>
+          </a>
+          <a class="nav-item nav-link" href="class.html">
+            <span class="nav-item-text">Class</span>
+          </a>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#"
+            id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Language</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">简体中文</a>
+              <a class="dropdown-item" href="#">日本語</a>
+            </div>
+          </div>
+        </div>
+        <span class="navbar-text">
+          <a href="class.html" class="navbar-text-text">
+            <span class="navbar-text-heading">Upcoming 
+              Class</span>: May 23, 2020 | 3:00-4:00pm EST
+          </a>
+        </span>
+        <a href="buy.html" role="button" 
+        class="navbar-btn-buy nav-link btn btn-outline-danger">Buy</a>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <h1 class="title">Procedure</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <ol id="procedure">
+            <li>Pour oil in a pot and begin heating it. You want it to be hot in
+               about 3 minutes.</li>
+            <li>Place all ingredients into a bowl or pot that can withstand high 
+              temperatures. However, save about 3 sesame seeds.</li>
             <li>Stir ingredients until they are consistent.</li>
             <li>Toss a single sesame seed into the heated oil.
-                <ul>
-                    <li>If the seed burns, the oil is too hot. Turn off the fire to let it cool and 
-                        test another seed later.</li>
-                    <li>If the seed shows no signs of sizzling, the oil is too cold. Continue heating
-                        and test another seed later.
-                    </li>
-                    <li>If the seed sizzles to an ever so slight shade of brown, the oil is at a
-                        good temperature. Proceed to step 5.</li>
-                </ul></li>
-            <li>Pour a small amount of your oil into the bowl and immediately stir the bubbles away.</li>
-            <li>Pour a slightly larger amount of your oil into the bowl than before and immediately 
-                stir the bubbles away.</li>
-            <li>Continue to pour more and more oil into the bowl with stirring until it has all been 
-                poured.</li>
+              <ul>
+                <li>If the seed burns, the oil is too hot. Turn off the fire to 
+                  let it cool and test another seed later.</li>
+                <li>If the seed shows no signs of sizzling, the oil is too cold. 
+                  Continue heating and test another seed later.</li>
+                <li>If the seed sizzles to an ever so slight shade of brown, the 
+                  oil is at a good temperature. Proceed to step 5.</li>
+              </ul>
+            </li>
+            <li>Pour a small amount of your oil into the bowl and immediately 
+              stir the bubbles away.</li>
+            <li>Pour a slightly larger amount of your oil into the bowl than 
+              before and immediately stir the bubbles away.</li>
+            <li>Continue to pour more and more oil into the bowl with stirring 
+              until it has all been poured.</li>
             <li>The chili oil will be ready for consumption after it cools!</li>
-        </ol>
-        <h4>Tips for Further Flavor Adjustment</h4>
-        <ul>
-            <li>Haha. I'm not an expert either. I'd have to ask my uncle.</li>
-        </ul>
-    </body>
+          </ol>
+        </div>
+        <div id="ingredients" class="col-md-3">
+          <h3>Ingredients</h3>
+          <p>
+            Consult the
+            <a href="ingredients.html">ingredients page</a>
+            before using this simplified list.</p>
+          <ul>
+            <li>Canola Oil</li>
+            <li>Alcohol</li>
+            <li>Chili Pepper Flakes</li>
+            <li>Chili Pepper Powder</li>
+            <li>Sesame Seeds</li>
+            <li>Salt</li>
+            <li>Peppercorn</li>
+            <li>Star Anise</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- javaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script> 
+  </body>
 </html>

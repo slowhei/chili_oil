@@ -2,75 +2,8 @@ $red: #DE2910;
 $yellow: #FFDE00;
 $blue: #0169D9;
 $darkYellow: rgb(219, 190, 0);
+$lightGrey: #F2F2F2;
 
-// Navbar
-.navbar {
-    height: 60px;
-    background-color: $yellow;
-    // Turns text in btn-buy to yellow when hovered
-    :hover {
-        color: $yellow;
-    }
-}
-.navbar-brand {
-    background-color: $red;
-    margin-top: 85px;
-    margin-left: 50px;
-    margin-right: 15px;
-    padding-top: 18px;
-    padding-bottom: 0px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-style: solid;
-    border-width: thick;
-    border-color: darkred;
-    .subtitle {
-        font-family: Comic Sans MS, Comic Sans, cursive;
-        font-style: italic;
-        font-size: 23.35px;
-        margin-bottom: 0px;
-        color: $yellow;
-    }
-    .title {
-        font-family: Luminari, fantasy;
-        font-size: 80px;
-        margin-top: 0px;
-        margin-bottom: 3px;
-        color: $yellow;
-    }
-}
-.nav-item {
-    .nav-item-text {
-        color: $blue;
-    }
-    :hover {
-        color: $red;
-    }
-}
-.dropdown-menu {
-    background-color: $darkYellow;
-}
-.navbar-text {
-    margin-left: 20px;
-    margin-right: 20px;
-    @media (max-width: 1118px) {
-        visibility: hidden;
-    }
-    .navbar-text-text {
-        color: black;
-        .navbar-text-heading {
-            text-decoration: underline;
-            color: black;
-        }
-    }
-}
-.navbar-btn-buy {
-    width: 75px;
-    font-family: "Arial Black";
-    font-size: 20px;
-}
-
-// Intro
 %position-absolute {
     position: absolute;
     margin: 0 auto;
@@ -195,25 +128,6 @@ $darkYellow: rgb(219, 190, 0);
 }
 // Medium Screens
 @media (max-width: 991px) {
-    .navbar-collapse {
-        background-color: $darkYellow;
-    }
-    .navbar-brand {
-        margin-top: -8px;
-        margin-left: 30px;
-        padding-top: 7px;
-        padding-bottom: 0.25px;
-        padding-left: 15px;
-        padding-right: 15px;
-        border-width: thin;
-        .subtitle{
-            font-size: 13px;
-        }
-        .title {
-            font-size: 30px;
-            margin-bottom: 0px;
-        }
-    }
     h1 {
         font-size: 25px;
     }
