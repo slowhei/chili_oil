@@ -1,5 +1,9 @@
 body {
-  background-color: black;
+  background-image: url("class-image.png");
+  background-repeat: no-repeat;
+  background-size: 2100px;
+  background-position-x: -650px;
+  background-position-y: -100px;
 }
 
 /*# sourceMappingURL=class.css.map */
