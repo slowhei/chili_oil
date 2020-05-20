@@ -4,11 +4,21 @@ $blue: #0169D9;
 $darkYellow: rgb(219, 190, 0);
 $lightGrey: #F2F2F2;
 
+
+
+
+
+// Necessary for background-size: auto 100%
 html {
   height: 100%;
+  
+  // Prevents page from scaling too small
+  // The page will start to have a scrollbar when the viewport is smaller
+  // than specified
+  min-height: 600px;
 }
 
-$darkness: 0.3;
+$darkness: 0.5;
 body {
   background: linear-gradient(rgba(0, 0, 0, $darkness), 
   rgba(0, 0, 0, $darkness)), url("class-image.png");
@@ -16,15 +26,17 @@ body {
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position-x: center;
+
+  // Necessary for h-100 for container-fluid
+  height: 100%;
 }
 
-// For computer-sized viewports
+// Prevent blackspace on computer-sized viewports
 @media (min-width: 1306px) {
   body {
     background-size: 100%;
   }
 }
-
 
 /***
  * FUTURE REFERENCE
@@ -35,3 +47,105 @@ body {
  * if (viewport_width > image_width)
  * if (viewport_width > viewport_height * (image_width / image_height))
  */
+
+
+
+
+
+
+.vertically-center {
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+$container-horizontal-padding: 5%;
+$date-time-font-size: 80px;
+$date-time-font-size-small: 60px;
+#container {
+  padding-left: $container-horizontal-padding;
+  padding-right: $container-horizontal-padding;
+
+  #placeholder-row {
+    height: 60px;
+  }
+  #row {
+    height: calc(100% - 60px);
+
+    #date-text {
+      text-align: center;
+      color: white;
+
+      #upcoming-class {
+        margin-top: 5%;
+        text-decoration: underline;
+        font-size: 40px;
+        @media (max-width: 767px) {
+          font-size: 30px;
+        }
+      }
+      
+      #date {
+        font-style: bold;
+        font-size: $date-time-font-size;
+        @media (max-width: 767px) {
+          font-size: $date-time-font-size-small;
+        }
+      }
+      #time {
+        margin-bottom: 5%;
+        font-style: bold;
+        font-size: $date-time-font-size;
+        @media (max-width: 767px) {
+          font-size: $date-time-font-size-small;
+        }
+      }
+    }
+    #links {
+      background-color: $darkYellow;
+      text-align: center;
+      position: relative;
+      height: 75%;
+      @media (max-width: 767px) {
+        height: auto;
+      }
+
+      #wrapper {
+        left: 0;
+        right: 0;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+
+        #join-text-main {
+
+          #free {
+            text-decoration: underline;
+          }
+        }
+        #join-text-sub {
+          margin-bottom: 5%;
+          font-style: italic;
+        }
+        #RSVP {
+          margin-bottom: 5%;
+          width: 40%;
+        }
+        #join {
+          margin-bottom: 1%;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+// Small Screens
+@media (max-width: 767px) {
+  
+}

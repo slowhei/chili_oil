@@ -1,13 +1,15 @@
 html {
   height: 100%;
+  min-height: 600px;
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("class-image.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("class-image.png");
   background-color: black;
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position-x: center;
+  height: 100%;
 }
 
 @media (min-width: 1306px) {
@@ -24,5 +26,88 @@ body {
  * if (viewport_width > image_width)
  * if (viewport_width > viewport_height * (image_width / image_height))
  */
+.vertically-center {
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#container #placeholder-row {
+  height: 60px;
+}
+#container #row {
+  height: calc(100% - 60px);
+}
+#container #row #date-text {
+  text-align: center;
+  color: white;
+}
+#container #row #date-text #upcoming-class {
+  margin-top: 5%;
+  text-decoration: underline;
+  font-size: 40px;
+}
+@media (max-width: 767px) {
+  #container #row #date-text #upcoming-class {
+    font-size: 30px;
+  }
+}
+#container #row #date-text #date {
+  font-style: bold;
+  font-size: 80px;
+}
+@media (max-width: 767px) {
+  #container #row #date-text #date {
+    font-size: 60px;
+  }
+}
+#container #row #date-text #time {
+  margin-bottom: 5%;
+  font-style: bold;
+  font-size: 80px;
+}
+@media (max-width: 767px) {
+  #container #row #date-text #time {
+    font-size: 60px;
+  }
+}
+#container #row #links {
+  background-color: #dbbe00;
+  text-align: center;
+  position: relative;
+  height: 75%;
+}
+@media (max-width: 767px) {
+  #container #row #links {
+    height: auto;
+  }
+}
+#container #row #links #wrapper {
+  left: 0;
+  right: 0;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#container #row #links #wrapper #join-text-main #free {
+  text-decoration: underline;
+}
+#container #row #links #wrapper #join-text-sub {
+  margin-bottom: 5%;
+  font-style: italic;
+}
+#container #row #links #wrapper #RSVP {
+  margin-bottom: 5%;
+  width: 40%;
+}
+#container #row #links #wrapper #join {
+  margin-bottom: 1%;
+}
 
 /*# sourceMappingURL=class.css.map */
