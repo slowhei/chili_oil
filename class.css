@@ -98,8 +98,8 @@ body {
   #container #row #links #wrapper {
     position: static;
     transform: none;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 }
 #container #row #links #wrapper #join-text-main #free {
