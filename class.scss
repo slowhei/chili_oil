@@ -53,8 +53,7 @@ body {
 
 
 
-.vertically-center {
-  margin: 0px;
+%vertically-center {
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -110,14 +109,22 @@ $date-time-font-size-small: 60px;
       height: 75%;
       @media (max-width: 767px) {
         height: auto;
+        position: static;
       }
 
       #wrapper {
+        @extend %vertically-center;
         left: 0;
         right: 0;
         width: 95%;
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
+
+        @media (max-width: 767px) {
+          position: static;
+          transform: none;
+          margin-top: 10%;
+          margin-bottom: 10%;
+        }
 
         #join-text-main {
 

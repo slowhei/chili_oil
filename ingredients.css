@@ -1,12 +1,22 @@
-table, .notice, .intro, .title {
+table, .notice, .intro, .page-title {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
 }
 
-.title {
+.page-title {
   margin-top: 100px;
   text-align: center;
+}
+@media (max-width: 1100px) {
+  .page-title {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 991px) {
+  .page-title {
+    margin-top: 100px;
+  }
 }
 
 .intro {

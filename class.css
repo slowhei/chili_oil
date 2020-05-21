@@ -26,8 +26,7 @@ body {
  * if (viewport_width > image_width)
  * if (viewport_width > viewport_height * (image_width / image_height))
  */
-.vertically-center {
-  margin: 0px;
+#container #row #links #wrapper {
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -86,14 +85,22 @@ body {
 @media (max-width: 767px) {
   #container #row #links {
     height: auto;
+    position: static;
   }
 }
 #container #row #links #wrapper {
   left: 0;
   right: 0;
   width: 95%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+}
+@media (max-width: 767px) {
+  #container #row #links #wrapper {
+    position: static;
+    transform: none;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
 }
 #container #row #links #wrapper #join-text-main #free {
   text-decoration: underline;
