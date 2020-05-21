@@ -112,6 +112,23 @@ $lightGrey: #F2F2F2;
     }
 }
 
+
+
+// 4K screens
+@media (min-width: 2000px) {
+    h1 {
+        font-size: 56px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    h4 {
+        font-size: 34px;
+    }
+    h5 {
+        font-size: 26px;
+    }
+}
 // Large Screens
 @media (max-width: 1199px) {
     h1 {

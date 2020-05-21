@@ -107,6 +107,9 @@ $date-time-font-size-small: 60px;
       text-align: center;
       position: relative;
       height: 75%;
+      @media(min-width: 2000px) {
+        height: 50%;
+      }
       @media (max-width: 767px) {
         height: auto;
         position: static;
@@ -150,9 +153,3 @@ $date-time-font-size-small: 60px;
 
 
 
-
-
-// Small Screens
-@media (max-width: 767px) {
-  
-}

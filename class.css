@@ -82,6 +82,11 @@ body {
   position: relative;
   height: 75%;
 }
+@media (min-width: 2000px) {
+  #container #row #links {
+    height: 50%;
+  }
+}
 @media (max-width: 767px) {
   #container #row #links {
     height: auto;
