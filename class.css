@@ -119,6 +119,8 @@ body {
 }
 #container #row #links #wrapper #join {
   margin-bottom: 1%;
+}
+#container #row #links #wrapper .active {
   width: 40%;
 }
 
